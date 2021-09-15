@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+    
+    <TextView
+        android:id="@+id/findTimetableNameLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/persons_name_question" />
+	
+    <LinearLayout
+        android:id="@+id/findTimetableSearchLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+	    <EditText
+	        android:id="@+id/findPersonFld"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:inputType="text"
+	        android:text=""
+	        android:nextFocusDown="@+id/findPersonNextBtn" >
+<!-- 	        android:text="john" > -->
+
+	    </EditText>
+
+	    <Button
+	        android:id="@+id/findPersonNextBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:text="Search"
+	        android:onClick="searchCbk" />
+	    
+	</LinearLayout>
+    
+    <ListView
+        android:id="@+id/findPersonLV"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+       	android:visibility="visible" />
+    
+	<ProgressBar
+        android:id="@+id/findPersonSpinner"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+       	android:visibility="gone" />
+    <!-- If only 1 View has a layout weight then it will automatically fill 
+         the rest of the LinearLayout in that dimension. -->
+    <View 
+        android:id="@+id/findPersonSpacerView" 
+        android:layout_width="match_parent" 
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+       	android:visibility="gone" />
+	    
+    <Button
+        android:id="@+id/findPersonAddPersonBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Person"
+        android:onClick="addTimetableCbk" />
+    
+</LinearLayout>

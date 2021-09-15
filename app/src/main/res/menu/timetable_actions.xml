@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_delete_from_phone"
+        android:title="Delete from my phone"
+        android:visible="true"/>
+    <item
+        android:id="@+id/action_change_history"
+        android:title="Who edited this timetable"
+        android:visible="true"/>
+</menu>

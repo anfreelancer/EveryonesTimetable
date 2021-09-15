@@ -1,0 +1,200 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:paddingTop="10dp"
+	android:paddingBottom="0dp"
+	android:paddingLeft="5dp"
+	android:paddingRight="0dp" >
+    
+    <ViewFlipper android:id="@+id/titleFlipper"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="20sp" />
+
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="20sp" />
+
+	  	<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="20sp" />
+	  	
+	  	<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="20sp" />
+	  	
+	  	<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="20sp" />
+
+   	</ViewFlipper>
+	
+    <ViewFlipper android:id="@+id/tableFlipper"
+		android:layout_width="match_parent" 
+        android:layout_height="0dp" 
+        android:layout_weight="1">
+   		
+		<ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+			<TableLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:stretchColumns="1">
+			</TableLayout>
+			
+		</ScrollView>
+		
+		<ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+			<TableLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:stretchColumns="1">
+			</TableLayout>
+			
+		</ScrollView>
+		
+		<ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+			<TableLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:stretchColumns="1">
+			</TableLayout>
+			
+		</ScrollView>
+		
+		<ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+			<TableLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:stretchColumns="1">
+			</TableLayout>
+			
+		</ScrollView>
+		
+		<ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+			<TableLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:stretchColumns="1">
+			</TableLayout>
+			
+		</ScrollView>
+		
+	</ViewFlipper>
+	
+    <RelativeLayout
+        android:id="@+id/actionButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:orientation="horizontal" >
+		
+        <Button
+            android:id="@+id/viewTimetableEditBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Edit"
+            android:onClick="editBtnCbk" />
+		
+        <Button
+            android:id="@+id/viewTimetableMenuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/viewTimetableEditBtn"
+            android:text="Menu"
+            android:onClick="showTimetableActions" />
+        
+        <Button
+            android:id="@+id/viewTimetableSaveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+            android:text="Save changes"
+            android:onClick="saveBtnCbk" />
+
+        <Button
+            android:id="@+id/viewTimetableCancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/viewTimetableSaveBtn"
+            android:layout_toLeftOf="@+id/leftBtn"
+            android:visibility="gone"
+            android:text="Cancel"
+            android:onClick="cancelBtnCbk" />
+        
+        <Button
+            android:id="@+id/viewTimetableYesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+            android:text="Yes, this one"
+            android:onClick="yesCbk" />
+
+        <Button
+            android:id="@+id/viewTimetableNoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/viewTimetableYesBtn"
+            android:layout_toLeftOf="@+id/leftBtn"
+            android:visibility="gone"
+            android:text="No"
+            android:onClick="noCbk" />
+        
+	    <Button
+	        android:id="@+id/leftBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/rightBtn"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+	        android:text="&lt;&lt;"
+	        android:enabled="false"
+	        android:onClick="showPreviousDayCbk" />
+	    
+	    <Button
+	        android:id="@+id/rightBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+	        android:text=">>" 
+	        android:onClick="showNextDayCbk"/>
+	
+    </RelativeLayout>
+	
+</LinearLayout>

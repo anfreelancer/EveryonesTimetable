@@ -1,0 +1,3 @@
+- Opening HTTPS connections to my server doesn't work in Android 9. So instead of fixing it yet again - I replaced the connection with HTTP instead.
+- Thanks to everyone who thinks that HTTPS with a self-signed cert is a bad idea. You sure showed me.
+

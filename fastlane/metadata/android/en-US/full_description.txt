@@ -1,0 +1,9 @@
+Everyone's Timetable is a mini social network for sharing timetables in your school.
+
+* Save your own timetable in a school-specific format, so you'll have easy access to it all the time.
+* Find timetables for other people in your school. No more hunting down timetables on professor's websites!
+* Add or update a timetable for someone else, who can't be bothered to do it themselves.
+
+Currently supports the following schools: Seneca College, Sheridan College. Contact us to add support for your school!
+
+The app needs internet access to find, download, and update timetables but can be used without an internet connection if all you want to do is look at a timetable you already have in your list.

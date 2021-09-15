@@ -1,0 +1,64 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/landscapeTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="This is landscape" />
+	
+	<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+		<TableLayout
+		    android:id="@+id/weekTable"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:stretchColumns="1,2,3,4,5"
+		    android:shrinkColumns="0">
+		    
+		    <TableRow>
+		        <TextView />
+		        <TextView
+		            android:text="Monday"
+		            android:padding="3dip"
+		            android:layout_width="0dip"
+		            android:layout_weight="1"
+    			    android:gravity="center" />
+		        <TextView
+		            android:text="Tuesday"
+		            android:padding="3dip"
+		            android:layout_width="0dip"
+		            android:layout_weight="1"  
+    			    android:gravity="center" />
+		        <TextView
+		            android:text="Wednesday"
+		            android:padding="3dip"
+		            android:layout_width="0dip"
+		            android:layout_weight="1"  
+    			    android:gravity="center" />
+		        <TextView
+		            android:text="Thursday"
+		            android:padding="3dip"
+		            android:layout_width="0dip"
+		            android:layout_weight="1"  
+    			    android:gravity="center" />
+		        <TextView
+		            android:text="Friday"
+		            android:padding="3dip"
+		            android:layout_width="0dip"
+		            android:layout_weight="1" 
+    			    android:gravity="center"  />
+		    </TableRow>
+				    
+		</TableLayout>
+		
+	</ScrollView>
+	
+</LinearLayout>

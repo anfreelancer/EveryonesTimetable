@@ -1,0 +1,6 @@
+build
+.gradle
+.idea
+app/build
+app/src/main/res/values/auto.xml
+

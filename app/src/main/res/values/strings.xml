@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Everyone\'s Timetable Smart</string>
+    <string name="buy">BUY</string>
+    <string name="premium">Premium</string>
+    <string name="action_settings">Settings</string>
+    <string name="view_timetable">View Timetable</string>
+    <string name="action_edit">Edit</string>
+    <string name="edit_course_code">Course code (including section):</string>
+    <string name="edit_room_number">Room number:</string>
+    <string name="edit_facilitator_name">Prof\'s name:</string>
+    <string name="persons_name_question">Search for a person:</string>
+    <string name="my_timetable">My timetable</string>
+    <string name="add_timetable">Add someone\'s timetable</string>
+    <string name="find_timetable">Find/add someone\'s timetable</string>
+    <string name="action_delete">Delete</string>
+    <string name="new_users_name_question">Your name (so you can distinguish your timetable from others):</string>
+    <string name="persons_hint_question">Enter a hint (e.g. Student@York, or Prof@Newnham)></string>
+    <string name="new_users_hint_question">A hint (e.g. Student@York, or Prof@Newnham, so people can find you):</string>
+    <string name="action_share">Share</string>
+    <string name="action_getlatest">Get Latest</string>
+    <string name="new_users_email_question">Your email address (for password reset and timetable updates):</string>
+    <string name="new_users_password_question1">A password to protect your account:</string>
+    <string name="new_users_password_question2">The same password again:</string>
+    <string name="title_activity_new_user">Initial Setup</string>
+    <string name="title_activity_add_person">Add Person</string>
+    <string name="about_string">Everyone\'s Timetable is maintained by Andrew Smith.\n\nPlease feel free to contact him
+        about bugs, feature requests, new schools, etc:\n\nhttp://littlesvr.ca/et/contact.php</string>
+    <string name="title_activity_show_history">Who changed this</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+</resources>

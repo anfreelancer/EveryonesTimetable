@@ -1,0 +1,12 @@
+<!-- 
+  This retardedness is required because on the 2.3.3 emulator (and presumably on some phones)
+  the dropdown items in an autocompletetextview has white text on white background.
+ -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dip"
+    android:ellipsize="marquee" />
